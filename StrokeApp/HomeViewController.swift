@@ -11,9 +11,19 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var CurrentRiskFactorLabel: UILabel!
     @IBOutlet weak var CurrentRiskFactorImage: UIImageView!
-    @IBOutlet weak var StrokeInfoButton: UIButton!
-    @IBOutlet weak var StrokeTestsButton: UIButton!
-    @IBOutlet weak var SendToDoctorButton: UIButton!
+    @IBOutlet weak var AlertView: UIView!
+    
+    @IBAction func StrokeInfoButton(sender: AnyObject) {
+    }
+    
+    @IBAction func StrokeTestsButton(sender: AnyObject) {
+    }
+    
+    @IBAction func SendToDoctorButton(sender: AnyObject) {
+    }
+    
+    @IBAction func AlertViewDismiss(sender: AnyObject) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD374A031C516D4100CF8796 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD374A021C516D4100CF8796 /* HomeViewController.swift */; };
 		FDA29A251C515D4F005FD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA29A241C515D4F005FD6A1 /* AppDelegate.swift */; };
 		FDA29A271C515D4F005FD6A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA29A261C515D4F005FD6A1 /* ViewController.swift */; };
 		FDA29A2A1C515D4F005FD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA29A281C515D4F005FD6A1 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD374A021C516D4100CF8796 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FDA29A211C515D4F005FD6A1 /* StrokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA29A241C515D4F005FD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDA29A261C515D4F005FD6A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				FDA29A301C515D4F005FD6A1 /* LaunchScreen.storyboard */,
 				FDA29A331C515D4F005FD6A1 /* Info.plist */,
 				FDA29A2B1C515D4F005FD6A1 /* StrokeApp.xcdatamodeld */,
+				FD374A021C516D4100CF8796 /* HomeViewController.swift */,
 			);
 			path = StrokeApp;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				FDA29A2D1C515D4F005FD6A1 /* StrokeApp.xcdatamodeld in Sources */,
 				FDA29A271C515D4F005FD6A1 /* ViewController.swift in Sources */,
 				FDA29A251C515D4F005FD6A1 /* AppDelegate.swift in Sources */,
+				FD374A031C516D4100CF8796 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
