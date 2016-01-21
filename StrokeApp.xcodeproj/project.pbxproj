@@ -310,6 +310,7 @@
 				FDA29A381C515D4F005FD6A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
