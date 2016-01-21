@@ -11,18 +11,16 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var CurrentRiskFactorLabel: UILabel!
     @IBOutlet weak var CurrentRiskFactorImage: UIImageView!
-    @IBOutlet weak var AlertView: UIView!
+    @IBOutlet weak var UserTitleAndAge: UILabel!
     
     @IBAction func StrokeInfoButton(sender: AnyObject) {
     }
-    
+
     @IBAction func StrokeTestsButton(sender: AnyObject) {
     }
     
-    @IBAction func SendToDoctorButton(sender: AnyObject) {
-    }
     
-    @IBAction func AlertViewDismiss(sender: AnyObject) {
+    @IBAction func SendToDoctorButton(sender: AnyObject) {
     }
     
     override func viewDidLoad() {
@@ -34,6 +32,5 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
 }
