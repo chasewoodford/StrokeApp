@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="StrokeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="StrokeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,9 +16,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ird-sa-kkj">
+                                <rect key="frame" x="221" y="386" width="159" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="Sta-FO-SFp"/>
+                                </constraints>
+                                <state key="normal" title="Stroke Info"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-W3-QBX">
+                                <rect key="frame" x="221" y="445" width="159" height="30"/>
+                                <state key="normal" title="Stroke Tests"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgS-Yj-2xB">
+                                <rect key="frame" x="221" y="499" width="159" height="30"/>
+                                <state key="normal" title="Send to Doctor"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fu4-8q-bKG">
+                                <rect key="frame" x="137" y="177" width="327" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="327" id="qLb-ZS-mO0"/>
+                                    <constraint firstAttribute="height" constant="174" id="qwD-tg-ppq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Risk Factor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8B-cm-54i">
+                                <rect key="frame" x="226" y="136" width="148" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="SHf-te-0Tc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fu4-8q-bKG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0K2-Hx-0Ux"/>
+                            <constraint firstItem="Fu4-8q-bKG" firstAttribute="centerX" secondItem="ird-sa-kkj" secondAttribute="centerX" id="8i5-ac-4p3"/>
+                            <constraint firstItem="GgS-Yj-2xB" firstAttribute="top" secondItem="cvv-W3-QBX" secondAttribute="bottom" constant="24" id="9iH-wG-6cA"/>
+                            <constraint firstItem="ird-sa-kkj" firstAttribute="top" secondItem="Fu4-8q-bKG" secondAttribute="bottom" constant="35" id="CO9-Wa-FxX"/>
+                            <constraint firstItem="l8B-cm-54i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="72" id="TAx-0h-CrK"/>
+                            <constraint firstItem="Fu4-8q-bKG" firstAttribute="centerX" secondItem="GgS-Yj-2xB" secondAttribute="centerX" id="Tpf-QZ-WIz"/>
+                            <constraint firstItem="Fu4-8q-bKG" firstAttribute="centerX" secondItem="cvv-W3-QBX" secondAttribute="centerX" id="Uad-YJ-5Xx"/>
+                            <constraint firstItem="Fu4-8q-bKG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="113" id="Ucx-Py-hMn"/>
+                            <constraint firstItem="Fu4-8q-bKG" firstAttribute="top" secondItem="l8B-cm-54i" secondAttribute="bottom" constant="20" id="ZgM-YD-3ta"/>
+                            <constraint firstItem="ird-sa-kkj" firstAttribute="leading" secondItem="cvv-W3-QBX" secondAttribute="leading" id="gaL-bh-jFE"/>
+                            <constraint firstItem="l8B-cm-54i" firstAttribute="centerX" secondItem="Fu4-8q-bKG" secondAttribute="centerX" id="oVA-9j-S5y"/>
+                            <constraint firstItem="GgS-Yj-2xB" firstAttribute="leading" secondItem="cvv-W3-QBX" secondAttribute="leading" id="qQq-Fy-O8D"/>
+                            <constraint firstItem="cvv-W3-QBX" firstAttribute="top" secondItem="ird-sa-kkj" secondAttribute="bottom" constant="29" id="sil-i7-8O1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XG4-Qx-nZe"/>
+                    <connections>
+                        <outlet property="CurrentRiskFactorImage" destination="Fu4-8q-bKG" id="0EC-dL-hPQ"/>
+                        <outlet property="CurrentRiskFactorLabel" destination="l8B-cm-54i" id="JcE-7N-mY4"/>
+                        <outlet property="SendToDoctorButton" destination="GgS-Yj-2xB" id="eXE-0Z-a5B"/>
+                        <outlet property="StrokeInfoButton" destination="ird-sa-kkj" id="ruU-bi-nsg"/>
+                        <outlet property="StrokeTestsButton" destination="cvv-W3-QBX" id="1bm-V6-giJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
