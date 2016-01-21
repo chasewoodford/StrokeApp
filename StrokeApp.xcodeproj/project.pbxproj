@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDA29A251C515D4F005FD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA29A241C515D4F005FD6A1 /* AppDelegate.swift */; };
+		FDA29A271C515D4F005FD6A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA29A261C515D4F005FD6A1 /* ViewController.swift */; };
+		FDA29A2A1C515D4F005FD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA29A281C515D4F005FD6A1 /* Main.storyboard */; };
+		FDA29A2D1C515D4F005FD6A1 /* StrokeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDA29A2B1C515D4F005FD6A1 /* StrokeApp.xcdatamodeld */; };
+		FDA29A2F1C515D4F005FD6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA29A2E1C515D4F005FD6A1 /* Assets.xcassets */; };
+		FDA29A321C515D4F005FD6A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA29A301C515D4F005FD6A1 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FDA29A211C515D4F005FD6A1 /* StrokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA29A241C515D4F005FD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDA29A261C515D4F005FD6A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDA29A291C515D4F005FD6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDA29A2C1C515D4F005FD6A1 /* StrokeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StrokeApp.xcdatamodel; sourceTree = "<group>"; };
+		FDA29A2E1C515D4F005FD6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDA29A311C515D4F005FD6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDA29A331C515D4F005FD6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDA29A1E1C515D4E005FD6A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDA29A181C515D4E005FD6A1 = {
+			isa = PBXGroup;
+			children = (
+				FDA29A231C515D4F005FD6A1 /* StrokeApp */,
+				FDA29A221C515D4F005FD6A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDA29A221C515D4F005FD6A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDA29A211C515D4F005FD6A1 /* StrokeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDA29A231C515D4F005FD6A1 /* StrokeApp */ = {
+			isa = PBXGroup;
+			children = (
+				FDA29A241C515D4F005FD6A1 /* AppDelegate.swift */,
+				FDA29A261C515D4F005FD6A1 /* ViewController.swift */,
+				FDA29A281C515D4F005FD6A1 /* Main.storyboard */,
+				FDA29A2E1C515D4F005FD6A1 /* Assets.xcassets */,
+				FDA29A301C515D4F005FD6A1 /* LaunchScreen.storyboard */,
+				FDA29A331C515D4F005FD6A1 /* Info.plist */,
+				FDA29A2B1C515D4F005FD6A1 /* StrokeApp.xcdatamodeld */,
+			);
+			path = StrokeApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDA29A201C515D4E005FD6A1 /* StrokeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA29A361C515D4F005FD6A1 /* Build configuration list for PBXNativeTarget "StrokeApp" */;
+			buildPhases = (
+				FDA29A1D1C515D4E005FD6A1 /* Sources */,
+				FDA29A1E1C515D4E005FD6A1 /* Frameworks */,
+				FDA29A1F1C515D4E005FD6A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StrokeApp;
+			productName = StrokeApp;
+			productReference = FDA29A211C515D4F005FD6A1 /* StrokeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDA29A191C515D4E005FD6A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Chase Woodford";
+				TargetAttributes = {
+					FDA29A201C515D4E005FD6A1 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = FDA29A1C1C515D4E005FD6A1 /* Build configuration list for PBXProject "StrokeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDA29A181C515D4E005FD6A1;
+			productRefGroup = FDA29A221C515D4F005FD6A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDA29A201C515D4E005FD6A1 /* StrokeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDA29A1F1C515D4E005FD6A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA29A321C515D4F005FD6A1 /* LaunchScreen.storyboard in Resources */,
+				FDA29A2F1C515D4F005FD6A1 /* Assets.xcassets in Resources */,
+				FDA29A2A1C515D4F005FD6A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDA29A1D1C515D4E005FD6A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA29A2D1C515D4F005FD6A1 /* StrokeApp.xcdatamodeld in Sources */,
+				FDA29A271C515D4F005FD6A1 /* ViewController.swift in Sources */,
+				FDA29A251C515D4F005FD6A1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FDA29A281C515D4F005FD6A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA29A291C515D4F005FD6A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDA29A301C515D4F005FD6A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA29A311C515D4F005FD6A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDA29A341C515D4F005FD6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDA29A351C515D4F005FD6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDA29A371C515D4F005FD6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StrokeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chasewoodford.StrokeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FDA29A381C515D4F005FD6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StrokeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chasewoodford.StrokeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDA29A1C1C515D4E005FD6A1 /* Build configuration list for PBXProject "StrokeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA29A341C515D4F005FD6A1 /* Debug */,
+				FDA29A351C515D4F005FD6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA29A361C515D4F005FD6A1 /* Build configuration list for PBXNativeTarget "StrokeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA29A371C515D4F005FD6A1 /* Debug */,
+				FDA29A381C515D4F005FD6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FDA29A2B1C515D4F005FD6A1 /* StrokeApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FDA29A2C1C515D4F005FD6A1 /* StrokeApp.xcdatamodel */,
+			);
+			currentVersion = FDA29A2C1C515D4F005FD6A1 /* StrokeApp.xcdatamodel */;
+			path = StrokeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FDA29A191C515D4E005FD6A1 /* Project object */;
+}
