@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func ResetButton(sender: AnyObject) {
+        userDataManager.setOnboarded(1)
     }
     
     override func viewDidLoad() {

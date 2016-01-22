@@ -34,6 +34,14 @@ class UserDataManager {
         NSUserDefaults.standardUserDefaults().setObject(onboarded, forKey: "onboarded")
     }
     
+    func getQuestionAnswer(code: Int) -> Int? {
+        return NSUserDefaults.standardUserDefaults().objectForKey("answer\(code)") as? Int
+    }
+    
+    func setQuestionAnswer(code: Int, answer: Int) {
+        NSUserDefaults.standardUserDefaults().setObject(answer, forKey: "answer\(code)")
+    }
+    
     func getRace() -> Int? {
         return NSUserDefaults.standardUserDefaults().objectForKey("race") as? Int
     }
