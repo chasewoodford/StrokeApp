@@ -16,9 +16,12 @@ class OnboardThreeViewController: UIViewController {
     @IBOutlet weak var Question4: UISwitch!
     @IBOutlet weak var Question5: UISwitch!
     @IBOutlet weak var Question6: UISwitch!
+    @IBOutlet weak var ShowMyStrokeRiskButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ShowMyStrokeRiskButton.layer.cornerRadius = 5
 
         // Do any additional setup after loading the view.
 
