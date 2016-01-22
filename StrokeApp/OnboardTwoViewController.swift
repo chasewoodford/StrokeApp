@@ -71,13 +71,14 @@ class Onboard2ViewController: UIViewController, UIPickerViewDataSource,UIPickerV
                 return;
             }
             
-            var weightLocalizedString = self.kUnknownString
+            var weightLocalizedString = ""
             self.hkWeight = mostRecentWeight as? HKQuantitySample;
             
             if let pounds = self.hkWeight?.quantity.doubleValueForUnit(HKUnit.poundUnit()) {
                 let weightFormatter = NSMassFormatter()
                 weightFormatter.forPersonMassUse = true;
                 weightLocalizedString = weightFormatter.stringFromValue(pounds, unit: .Pound)
+                print("weight=\(weightLocalizedString)")
             }
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in

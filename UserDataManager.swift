@@ -50,4 +50,12 @@ class UserDataManager {
         NSUserDefaults.standardUserDefaults().setObject(race, forKey: "race")
     }
     
+    func getStrokeRisk() -> Int? {
+        return NSUserDefaults.standardUserDefaults().objectForKey("risk") as? Int
+    }
+    
+    func setStrokeRisk(risk: Int) {
+        NSUserDefaults.standardUserDefaults().setObject(risk, forKey: "risk")
+    }
+    
 }
