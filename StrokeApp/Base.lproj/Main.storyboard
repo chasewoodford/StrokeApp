@@ -165,10 +165,10 @@
             </objects>
             <point key="canvasLocation" x="2458" y="1325"/>
         </scene>
-        <!--View Controller-->
+        <!--Share View Controller-->
         <scene sceneID="Qd1-FY-asc">
             <objects>
-                <viewController id="npx-oC-i89" sceneMemberID="viewController">
+                <viewController id="npx-oC-i89" customClass="ShareViewController" customModule="StrokeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nVb-ev-EOT"/>
                         <viewControllerLayoutGuide type="bottom" id="PlP-wu-F6e"/>
@@ -187,7 +187,7 @@
                                     <constraint firstAttribute="width" constant="335" id="ZW8-lY-VaH"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmo-K1-ewC">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmo-K1-ewC">
                                 <rect key="frame" x="20" y="20" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -224,6 +224,9 @@
                             <constraint firstItem="YEP-df-TqM" firstAttribute="top" secondItem="ZVA-LZ-dvY" secondAttribute="top" id="x9x-F4-S55"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ShareButton" destination="RVr-8c-DmD" id="TuA-lA-iix"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VcM-kH-1uk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -459,6 +462,7 @@ VGhlIHVsdGltYXRlIGFwcCADZm9yIHN0cm9rZSBhbGVydCBhbmQgc3Ryb2tlIHByZXZlbnRpb24
                     </view>
                     <navigationItem key="navigationItem" id="70l-qS-ij9"/>
                     <connections>
+                        <outlet property="GetStartedButton" destination="kdU-Mp-tOf" id="Evb-Pq-Qoc"/>
                         <outlet property="authorizeOutlet" destination="kdU-Mp-tOf" id="dbm-GM-Zjj"/>
                     </connections>
                 </viewController>
@@ -618,6 +622,7 @@ VGhlIHVsdGltYXRlIGFwcCADZm9yIHN0cm9rZSBhbGVydCBhbmQgc3Ryb2tlIHByZXZlbnRpb24
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="SaveAndContinueButton" destination="aEF-Lh-iKp" id="vDc-gb-8L5"/>
                         <outlet property="age" destination="yxj-Ny-LGb" id="9qw-wS-cTz"/>
                         <outlet property="firstName" destination="lZz-5K-qmV" id="m9N-UY-45K"/>
                         <outlet property="gender" destination="lFh-uP-q5W" id="Tk6-rF-fLR"/>
@@ -844,6 +849,7 @@ Questionnaire</string>
                         <outlet property="Question4" destination="lCn-bN-DkH" id="UYi-3k-jEU"/>
                         <outlet property="Question5" destination="ymk-CC-hBV" id="2fK-cu-0iL"/>
                         <outlet property="Question6" destination="5o7-qU-eoC" id="9IK-5y-Nq4"/>
+                        <outlet property="ShowMyStrokeRiskButton" destination="OFo-Sh-nEW" id="xOd-s9-idB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuU-zm-kC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -885,7 +891,7 @@ Questionnaire</string>
         <image name="ShareScreen" width="752" height="955"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JA6-un-mNN"/>
-        <segue reference="hqL-Em-ekz"/>
+        <segue reference="MMR-dD-mb0"/>
+        <segue reference="f6G-bt-IvI"/>
     </inferredMetricsTieBreakers>
 </document>

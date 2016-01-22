@@ -24,6 +24,7 @@ class Onboard2ViewController: UIViewController, UIPickerViewDataSource,UIPickerV
     @IBOutlet var racePicker: UIPickerView!
     @IBOutlet var age: UITextField!
     @IBOutlet var gender: UITextField!
+    @IBOutlet weak var SaveAndContinueButton: UIButton!
     
     @IBAction func doSave(sender: AnyObject) {
         
@@ -42,6 +43,8 @@ class Onboard2ViewController: UIViewController, UIPickerViewDataSource,UIPickerV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SaveAndContinueButton.layer.cornerRadius = 5
         
         racePicker.dataSource = self
         racePicker.delegate = self

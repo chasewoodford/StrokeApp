@@ -13,6 +13,7 @@ class Onboard1ViewController: UIViewController {
     var authorized = false
     
     @IBOutlet weak var authorizeOutlet: UIButton!
+    @IBOutlet weak var GetStartedButton: UIButton!
     
     @IBAction func doGetStarted(sender: AnyObject) {
         if (!authorized) {
@@ -30,6 +31,8 @@ class Onboard1ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GetStartedButton.layer.cornerRadius = 5
         
         // Do any additional setup after loading the view.
         

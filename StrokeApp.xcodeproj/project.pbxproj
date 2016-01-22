@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FD374A031C516D4100CF8796 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD374A021C516D4100CF8796 /* HomeViewController.swift */; };
 		FD374A051C517F1100CF8796 /* StrokeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD374A041C517F1100CF8796 /* StrokeInfoViewController.swift */; };
+		FD83FF9E1C5260EE007C217A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83FF9D1C5260EE007C217A /* ShareViewController.swift */; };
 		FDA29A251C515D4F005FD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA29A241C515D4F005FD6A1 /* AppDelegate.swift */; };
 		FDA29A271C515D4F005FD6A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA29A261C515D4F005FD6A1 /* ViewController.swift */; };
 		FDA29A2A1C515D4F005FD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA29A281C515D4F005FD6A1 /* Main.storyboard */; };
@@ -26,7 +27,8 @@
 /* Begin PBXFileReference section */
 		FD374A021C516D4100CF8796 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FD374A041C517F1100CF8796 /* StrokeInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeInfoViewController.swift; sourceTree = "<group>"; };
-		FDA29A211C515D4F005FD6A1 /* StrokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD83FF9D1C5260EE007C217A /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		FDA29A211C515D4F005FD6A1 /* Smart Beat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Beat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA29A241C515D4F005FD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDA29A261C515D4F005FD6A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDA29A291C515D4F005FD6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,7 +69,7 @@
 		FDA29A221C515D4F005FD6A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDA29A211C515D4F005FD6A1 /* StrokeApp.app */,
+				FDA29A211C515D4F005FD6A1 /* Smart Beat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +92,7 @@
 				FD374A041C517F1100CF8796 /* StrokeInfoViewController.swift */,
 				FDAF40A31C52035C0052B6C6 /* OnboardTwoViewController.swift */,
 				FDAF40A51C5206FE0052B6C6 /* OnboardThreeViewController.swift */,
+				FD83FF9D1C5260EE007C217A /* ShareViewController.swift */,
 			);
 			path = StrokeApp;
 			sourceTree = "<group>";
@@ -111,7 +114,7 @@
 			);
 			name = StrokeApp;
 			productName = StrokeApp;
-			productReference = FDA29A211C515D4F005FD6A1 /* StrokeApp.app */;
+			productReference = FDA29A211C515D4F005FD6A1 /* Smart Beat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDA29A2D1C515D4F005FD6A1 /* StrokeApp.xcdatamodeld in Sources */,
+				FD83FF9E1C5260EE007C217A /* ShareViewController.swift in Sources */,
 				FDA29A271C515D4F005FD6A1 /* ViewController.swift in Sources */,
 				FDAF409E1C5202110052B6C6 /* UserDataManager.swift in Sources */,
 				FD374A051C517F1100CF8796 /* StrokeInfoViewController.swift in Sources */,
@@ -300,7 +304,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chasewoodford.StrokeApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Smart Beat";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -316,7 +320,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chasewoodford.StrokeApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Smart Beat";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
