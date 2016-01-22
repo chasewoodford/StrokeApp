@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FDA29A201C515D4E005FD6A1"
-               BuildableName = "StrokeApp.app"
+               BuildableName = "Smart Beat.app"
                BlueprintName = "StrokeApp"
                ReferencedContainer = "container:StrokeApp.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDA29A201C515D4E005FD6A1"
-            BuildableName = "StrokeApp.app"
+            BuildableName = "Smart Beat.app"
             BlueprintName = "StrokeApp"
             ReferencedContainer = "container:StrokeApp.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDA29A201C515D4E005FD6A1"
-            BuildableName = "StrokeApp.app"
+            BuildableName = "Smart Beat.app"
             BlueprintName = "StrokeApp"
             ReferencedContainer = "container:StrokeApp.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDA29A201C515D4E005FD6A1"
-            BuildableName = "StrokeApp.app"
+            BuildableName = "Smart Beat.app"
             BlueprintName = "StrokeApp"
             ReferencedContainer = "container:StrokeApp.xcodeproj">
          </BuildableReference>

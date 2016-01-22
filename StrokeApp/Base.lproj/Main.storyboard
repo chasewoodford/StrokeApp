@@ -9,7 +9,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="StrokeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Smart_Beat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="2Mg-OZ-hqw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HighRisk" translatesAutoresizingMaskIntoConstraints="NO" id="Fu4-8q-bKG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighRisk" translatesAutoresizingMaskIntoConstraints="NO" id="Fu4-8q-bKG">
                                 <rect key="frame" x="26" y="96" width="548" height="265"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ird-sa-kkj">
@@ -115,7 +115,7 @@
         <!--Stroke Info View Controller-->
         <scene sceneID="BeT-T7-QgH">
             <objects>
-                <viewController id="qTi-P9-zXu" customClass="StrokeInfoViewController" customModule="StrokeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qTi-P9-zXu" customClass="StrokeInfoViewController" customModule="Smart_Beat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rpp-1d-f6E"/>
                         <viewControllerLayoutGuide type="bottom" id="Jf4-2n-yms"/>
@@ -168,7 +168,7 @@
         <!--Share View Controller-->
         <scene sceneID="Qd1-FY-asc">
             <objects>
-                <viewController id="npx-oC-i89" customClass="ShareViewController" customModule="StrokeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="npx-oC-i89" customClass="ShareViewController" customModule="Smart_Beat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nVb-ev-EOT"/>
                         <viewControllerLayoutGuide type="bottom" id="PlP-wu-F6e"/>
@@ -187,15 +187,15 @@
                                     <constraint firstAttribute="width" constant="335" id="ZW8-lY-VaH"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmo-K1-ewC">
-                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmo-K1-ewC">
+                                <rect key="frame" x="20" y="64" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="qTi-P9-zXu" kind="show" id="f6G-bt-IvI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVr-8c-DmD">
-                                <rect key="frame" x="31" y="530" width="313" height="50"/>
+                                <rect key="frame" x="31" y="498" width="313" height="50"/>
                                 <color key="backgroundColor" red="0.1019607843" green="0.45882352939999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BzY-Vs-28j"/>
@@ -217,7 +217,7 @@
                             <constraint firstItem="GKD-nK-lj0" firstAttribute="top" secondItem="ZVA-LZ-dvY" secondAttribute="top" constant="-245" id="EWx-lz-QdH"/>
                             <constraint firstItem="GKD-nK-lj0" firstAttribute="leading" secondItem="cmo-K1-ewC" secondAttribute="leading" id="GXX-eP-a6v"/>
                             <constraint firstItem="YEP-df-TqM" firstAttribute="bottom" secondItem="PlP-wu-F6e" secondAttribute="top" id="Sjq-Xj-5vt"/>
-                            <constraint firstAttribute="bottom" secondItem="RVr-8c-DmD" secondAttribute="bottom" constant="20" symbolic="YES" id="X47-eg-xwB"/>
+                            <constraint firstAttribute="bottom" secondItem="RVr-8c-DmD" secondAttribute="bottom" constant="52" id="X47-eg-xwB"/>
                             <constraint firstAttribute="trailing" secondItem="YEP-df-TqM" secondAttribute="trailing" id="i4e-EP-8ZB"/>
                             <constraint firstItem="YEP-df-TqM" firstAttribute="leading" secondItem="ZVA-LZ-dvY" secondAttribute="leading" id="pMz-Y6-5sF"/>
                             <constraint firstItem="RVr-8c-DmD" firstAttribute="centerX" secondItem="GKD-nK-lj0" secondAttribute="centerX" id="tmG-Rc-Nze"/>
@@ -357,7 +357,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Prevention" translatesAutoresizingMaskIntoConstraints="NO" id="mB8-Xx-IO9">
                                 <rect key="frame" x="20" y="81" width="335" height="1360"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1r-Dn-oT4">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1r-Dn-oT4">
                                 <rect key="frame" x="20" y="20" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -384,7 +384,7 @@
         <!--Onboard1 View Controller-->
         <scene sceneID="2UG-om-dcP">
             <objects>
-                <viewController storyboardIdentifier="onboard1" id="d1e-jG-7EE" customClass="Onboard1ViewController" customModule="StrokeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboard1" id="d1e-jG-7EE" customClass="Onboard1ViewController" customModule="Smart_Beat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wbw-vq-UnO"/>
                         <viewControllerLayoutGuide type="bottom" id="sO4-f4-FV4"/>
@@ -473,7 +473,7 @@ VGhlIHVsdGltYXRlIGFwcCADZm9yIHN0cm9rZSBhbGVydCBhbmQgc3Ryb2tlIHByZXZlbnRpb24
         <!--Onboard2 View Controller-->
         <scene sceneID="dIh-cv-bBY">
             <objects>
-                <viewController storyboardIdentifier="onboard2" id="oNY-Gm-xjh" customClass="Onboard2ViewController" customModule="StrokeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboard2" id="oNY-Gm-xjh" customClass="Onboard2ViewController" customModule="Smart_Beat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K9E-hR-CJs"/>
                         <viewControllerLayoutGuide type="bottom" id="riF-HG-UeL"/>
@@ -639,7 +639,7 @@ VGhlIHVsdGltYXRlIGFwcCADZm9yIHN0cm9rZSBhbGVydCBhbmQgc3Ryb2tlIHByZXZlbnRpb24
         <!--Onboard Three View Controller-->
         <scene sceneID="V09-Xe-Klb">
             <objects>
-                <viewController storyboardIdentifier="onboard3" id="Gjq-D3-YgX" customClass="OnboardThreeViewController" customModule="StrokeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboard3" id="Gjq-D3-YgX" customClass="OnboardThreeViewController" customModule="Smart_Beat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FLx-gA-wjE"/>
                         <viewControllerLayoutGuide type="bottom" id="8tu-ia-O6F"/>
@@ -652,7 +652,7 @@ VGhlIHVsdGltYXRlIGFwcCADZm9yIHN0cm9rZSBhbGVydCBhbmQgc3Ryb2tlIHByZXZlbnRpb24
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFo-Sh-nEW">
-                                <rect key="frame" x="143" y="512" width="313" height="50"/>
+                                <rect key="frame" x="143" y="498" width="313" height="50"/>
                                 <color key="backgroundColor" red="0.1019607843" green="0.45882352939999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="RkD-7l-W1t"/>
@@ -837,7 +837,7 @@ Questionnaire</string>
                             <constraint firstItem="hmn-So-g4m" firstAttribute="leading" secondItem="Eap-YT-nYW" secondAttribute="leading" id="XDg-tS-hKB"/>
                             <constraint firstAttribute="trailing" secondItem="hmn-So-g4m" secondAttribute="trailing" id="Xf4-ym-7gm"/>
                             <constraint firstItem="oap-bw-la7" firstAttribute="centerX" secondItem="OFo-Sh-nEW" secondAttribute="centerX" id="vX7-aq-2ai"/>
-                            <constraint firstItem="8tu-ia-O6F" firstAttribute="top" secondItem="OFo-Sh-nEW" secondAttribute="bottom" constant="38" id="yzQ-sC-9GS"/>
+                            <constraint firstItem="8tu-ia-O6F" firstAttribute="top" secondItem="OFo-Sh-nEW" secondAttribute="bottom" constant="52" id="yzQ-sC-9GS"/>
                             <constraint firstItem="hmn-So-g4m" firstAttribute="top" secondItem="Eap-YT-nYW" secondAttribute="top" id="z5s-s8-QiM"/>
                         </constraints>
                     </view>
