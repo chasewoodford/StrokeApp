@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 
+var userDataManager: UserDataManager = UserDataManager()
+var healthManager: HealthManager = HealthManager()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,6 +21,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        
+        let onboarded = userDataManager.getOnboarded()
+        print("onboarded=\(onboarded)")
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        var initialViewController = UIViewController()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if onboarded == nil || onboarded == 1 {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("onboard1")
+        } else if onboarded == 2 {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("onboard2")
+        } else {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("home")
+        }
+        
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

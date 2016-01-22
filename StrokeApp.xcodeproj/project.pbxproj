@@ -16,6 +16,11 @@
 		FDA29A2F1C515D4F005FD6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA29A2E1C515D4F005FD6A1 /* Assets.xcassets */; };
 		FDA29A321C515D4F005FD6A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA29A301C515D4F005FD6A1 /* LaunchScreen.storyboard */; };
 		FDA29A3A1C515FE7005FD6A1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA29A391C515FE7005FD6A1 /* HealthKit.framework */; };
+		FDAF409E1C5202110052B6C6 /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF409D1C5202110052B6C6 /* UserDataManager.swift */; };
+		FDAF40A01C52029A0052B6C6 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF409F1C52029A0052B6C6 /* HealthManager.swift */; };
+		FDAF40A21C5203380052B6C6 /* OnboardOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF40A11C5203380052B6C6 /* OnboardOneViewController.swift */; };
+		FDAF40A41C52035C0052B6C6 /* OnboardTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF40A31C52035C0052B6C6 /* OnboardTwoViewController.swift */; };
+		FDAF40A61C5206FE0052B6C6 /* OnboardThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAF40A51C5206FE0052B6C6 /* OnboardThreeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		FDA29A331C515D4F005FD6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDA29A391C515FE7005FD6A1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		FDA29A3B1C515FE7005FD6A1 /* StrokeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = StrokeApp.entitlements; sourceTree = "<group>"; };
+		FDAF409D1C5202110052B6C6 /* UserDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDataManager.swift; path = ../UserDataManager.swift; sourceTree = "<group>"; };
+		FDAF409F1C52029A0052B6C6 /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		FDAF40A11C5203380052B6C6 /* OnboardOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardOneViewController.swift; sourceTree = "<group>"; };
+		FDAF40A31C52035C0052B6C6 /* OnboardTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardTwoViewController.swift; sourceTree = "<group>"; };
+		FDAF40A51C5206FE0052B6C6 /* OnboardThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardThreeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +75,11 @@
 		FDA29A231C515D4F005FD6A1 /* StrokeApp */ = {
 			isa = PBXGroup;
 			children = (
+				FDAF409D1C5202110052B6C6 /* UserDataManager.swift */,
 				FDA29A3B1C515FE7005FD6A1 /* StrokeApp.entitlements */,
 				FDA29A241C515D4F005FD6A1 /* AppDelegate.swift */,
+				FDAF40A11C5203380052B6C6 /* OnboardOneViewController.swift */,
+				FDAF409F1C52029A0052B6C6 /* HealthManager.swift */,
 				FDA29A261C515D4F005FD6A1 /* ViewController.swift */,
 				FDA29A281C515D4F005FD6A1 /* Main.storyboard */,
 				FDA29A2E1C515D4F005FD6A1 /* Assets.xcassets */,
@@ -75,6 +88,8 @@
 				FDA29A2B1C515D4F005FD6A1 /* StrokeApp.xcdatamodeld */,
 				FD374A021C516D4100CF8796 /* HomeViewController.swift */,
 				FD374A041C517F1100CF8796 /* StrokeInfoViewController.swift */,
+				FDAF40A31C52035C0052B6C6 /* OnboardTwoViewController.swift */,
+				FDAF40A51C5206FE0052B6C6 /* OnboardThreeViewController.swift */,
 			);
 			path = StrokeApp;
 			sourceTree = "<group>";
@@ -158,9 +173,14 @@
 			files = (
 				FDA29A2D1C515D4F005FD6A1 /* StrokeApp.xcdatamodeld in Sources */,
 				FDA29A271C515D4F005FD6A1 /* ViewController.swift in Sources */,
+				FDAF409E1C5202110052B6C6 /* UserDataManager.swift in Sources */,
 				FD374A051C517F1100CF8796 /* StrokeInfoViewController.swift in Sources */,
+				FDAF40A41C52035C0052B6C6 /* OnboardTwoViewController.swift in Sources */,
 				FDA29A251C515D4F005FD6A1 /* AppDelegate.swift in Sources */,
+				FDAF40A61C5206FE0052B6C6 /* OnboardThreeViewController.swift in Sources */,
 				FD374A031C516D4100CF8796 /* HomeViewController.swift in Sources */,
+				FDAF40A01C52029A0052B6C6 /* HealthManager.swift in Sources */,
+				FDAF40A21C5203380052B6C6 /* OnboardOneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
