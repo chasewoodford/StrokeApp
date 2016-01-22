@@ -21,10 +21,19 @@ class HomeViewController: UIViewController {
     @IBAction func StrokeTestsButton(sender: AnyObject) {
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         StrokeInfoButton.layer.cornerRadius = 5
         StrokeTestsButton.layer.cornerRadius = 5
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        imageView.contentMode = .ScaleAspectFit
+        // 4
+        let image = UIImage(named: "Logo")
+        imageView.image = image
+        // 5
+        navigationItem.titleView = imageView
         // Do any additional setup after loading the view, typically from a nib.
     }
     
