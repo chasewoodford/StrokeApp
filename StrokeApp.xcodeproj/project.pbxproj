@@ -10,6 +10,7 @@
 		FD374A031C516D4100CF8796 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD374A021C516D4100CF8796 /* HomeViewController.swift */; };
 		FD374A051C517F1100CF8796 /* StrokeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD374A041C517F1100CF8796 /* StrokeInfoViewController.swift */; };
 		FD83FF9E1C5260EE007C217A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83FF9D1C5260EE007C217A /* ShareViewController.swift */; };
+		FD94CB701C52837E00144453 /* UITableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD94CB6F1C52837E00144453 /* UITableTableViewController.swift */; };
 		FDA29A251C515D4F005FD6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA29A241C515D4F005FD6A1 /* AppDelegate.swift */; };
 		FDA29A271C515D4F005FD6A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA29A261C515D4F005FD6A1 /* ViewController.swift */; };
 		FDA29A2A1C515D4F005FD6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA29A281C515D4F005FD6A1 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		FD374A021C516D4100CF8796 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FD374A041C517F1100CF8796 /* StrokeInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeInfoViewController.swift; sourceTree = "<group>"; };
 		FD83FF9D1C5260EE007C217A /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		FD94CB6F1C52837E00144453 /* UITableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableTableViewController.swift; sourceTree = "<group>"; };
 		FDA29A211C515D4F005FD6A1 /* Smart Beat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Beat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA29A241C515D4F005FD6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDA29A261C515D4F005FD6A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				FDAF40A31C52035C0052B6C6 /* OnboardTwoViewController.swift */,
 				FDAF40A51C5206FE0052B6C6 /* OnboardThreeViewController.swift */,
 				FD83FF9D1C5260EE007C217A /* ShareViewController.swift */,
+				FD94CB6F1C52837E00144453 /* UITableTableViewController.swift */,
 			);
 			path = StrokeApp;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				FD83FF9E1C5260EE007C217A /* ShareViewController.swift in Sources */,
 				FDA29A271C515D4F005FD6A1 /* ViewController.swift in Sources */,
 				FDAF409E1C5202110052B6C6 /* UserDataManager.swift in Sources */,
+				FD94CB701C52837E00144453 /* UITableTableViewController.swift in Sources */,
 				FD374A051C517F1100CF8796 /* StrokeInfoViewController.swift in Sources */,
 				FDAF40A41C52035C0052B6C6 /* OnboardTwoViewController.swift in Sources */,
 				FDA29A251C515D4F005FD6A1 /* AppDelegate.swift in Sources */,

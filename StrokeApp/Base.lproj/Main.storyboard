@@ -15,17 +15,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="2Mg-OZ-hqw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighRisk" translatesAutoresizingMaskIntoConstraints="NO" id="Fu4-8q-bKG">
-                                <rect key="frame" x="26" y="96" width="323" height="332"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HighRisk" translatesAutoresizingMaskIntoConstraints="NO" id="Fu4-8q-bKG">
+                                <rect key="frame" x="26" y="96" width="548" height="332"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ird-sa-kkj">
-                                <rect key="frame" x="30" y="470" width="313" height="50"/>
+                                <rect key="frame" x="30" y="403" width="313" height="50"/>
                                 <color key="backgroundColor" red="0.10196078431372549" green="0.45882352941176469" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="313" id="2cp-89-Htf"/>
@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-W3-QBX">
-                                <rect key="frame" x="30" y="540" width="313" height="50"/>
+                                <rect key="frame" x="30" y="473" width="313" height="50"/>
                                 <color key="backgroundColor" red="0.1019607843" green="0.45882352939999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ca5-v4-Jws"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charles, 67" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdl-SD-8Oe">
-                                <rect key="frame" x="0.0" y="372" width="375" height="46"/>
+                                <rect key="frame" x="0.0" y="305" width="600" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="rsZ-Vf-JTS"/>
                                 </constraints>
@@ -63,7 +63,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hye-Y5-sb7">
-                                <rect key="frame" x="167" y="617" width="39" height="30"/>
+                                <rect key="frame" x="167" y="550" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ATR-20-K0q"/>
@@ -187,7 +187,7 @@
                                     <constraint firstAttribute="width" constant="335" id="ZW8-lY-VaH"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmo-K1-ewC">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmo-K1-ewC">
                                 <rect key="frame" x="20" y="64" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -232,16 +232,16 @@
             </objects>
             <point key="canvasLocation" x="3112" y="1325"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table Table View Controller-->
         <scene sceneID="dLo-yO-qzs">
             <objects>
-                <tableViewController id="hAO-ak-yut" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gzc-hn-4ca">
+                <tableViewController id="hAO-ak-yut" customClass="UITableTableViewController" customModule="Smart_Beat" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="80" sectionFooterHeight="28" id="gzc-hn-4ca">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hwN-YQ-O6Y">
-                            <rect key="frame" x="0.0" y="204" width="600" height="50"/>
+                            <rect key="frame" x="0.0" y="256" width="600" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.1019607843" green="0.45882352939999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -257,10 +257,10 @@
                             </connections>
                         </button>
                         <sections>
-                            <tableViewSection headerTitle="The following will be sent to your physician:" id="GWz-CB-OyR">
+                            <tableViewSection headerTitle="The following data will be sent to your physician:" id="GWz-CB-OyR">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" id="UHV-hc-mNX">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="80" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UHV-hc-mNX" id="PE4-8N-uj8">
                                             <rect key="frame" x="0.0" y="0.0" width="561" height="43.5"/>
@@ -276,7 +276,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" id="wp8-2b-pso">
-                                        <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="124" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wp8-2b-pso" id="Ais-J1-t0C">
                                             <rect key="frame" x="0.0" y="0.0" width="561" height="43.5"/>
@@ -292,7 +292,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" id="MSi-5Z-0tj">
-                                        <rect key="frame" x="0.0" y="116" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="168" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MSi-5Z-0tj" id="bqQ-ZJ-HK3">
                                             <rect key="frame" x="0.0" y="0.0" width="561" height="43.5"/>
@@ -308,7 +308,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" id="zCD-sW-TYF">
-                                        <rect key="frame" x="0.0" y="160" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="212" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zCD-sW-TYF" id="4Kj-s3-wbE">
                                             <rect key="frame" x="0.0" y="0.0" width="561" height="43.5"/>
@@ -337,7 +337,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mya-IR-olR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3766" y="1325"/>
+            <point key="canvasLocation" x="3769" y="1325"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3hp-xX-nhT">
@@ -348,17 +348,17 @@
                         <viewControllerLayoutGuide type="bottom" id="pmK-bU-pdL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="x0R-sq-SAs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="2cA-of-toT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Prevention" translatesAutoresizingMaskIntoConstraints="NO" id="mB8-Xx-IO9">
                                 <rect key="frame" x="20" y="81" width="335" height="1360"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1r-Dn-oT4">
-                                <rect key="frame" x="16" y="20" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1r-Dn-oT4">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="dcz-kO-bX9"/>
@@ -690,7 +690,8 @@ Questionnaire</string>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J4P-zd-sDr">
                                 <rect key="frame" x="29" y="170" width="279" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Do you have a history of heart disease?</string>
+                                <string key="text">Do you have a history of heart disease?
+</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -705,7 +706,8 @@ Questionnaire</string>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sVW-47-BwQ">
                                 <rect key="frame" x="29" y="365" width="207" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Do you have diabetes?</string>
+                                <string key="text">Do you have diabetes?
+</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -713,7 +715,8 @@ Questionnaire</string>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrn-JO-VMX">
                                 <rect key="frame" x="29" y="429" width="241" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Do you currently smoke tobacco?</string>
+                                <string key="text">Do you currently smoke tobacco?
+</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -897,7 +900,7 @@ Questionnaire</string>
         <image name="ShareScreen" width="752" height="955"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MMR-dD-mb0"/>
         <segue reference="f6G-bt-IvI"/>
+        <segue reference="hqL-Em-ekz"/>
     </inferredMetricsTieBreakers>
 </document>
