@@ -10,6 +10,8 @@ import UIKit
 
 class Onboard1ViewController: UIViewController {
     
+    @IBOutlet weak var authorizeOutlet: UIButton!
+    
     @IBAction func doGetStarted(sender: AnyObject) {
         authorizeHealthKit()
         userDataManager.setOnboarded(2)
