@@ -17,6 +17,7 @@ class Onboard1ViewController: UIViewController {
     @IBAction func doGetStarted(sender: AnyObject) {
         if (!authorized) {
             authorizeHealthKit()
+            authorizeOutlet.setTitle("Get Started", forState: .Normal)
         } else {
             userDataManager.setOnboarded(2)
         }
@@ -34,8 +35,10 @@ class Onboard1ViewController: UIViewController {
         
         if (!authorized) {
             // set the text of the button to Authorize
+            authorizeOutlet.setTitle("Authorize Smart Beat", forState: .Normal)
         } else {
             // set the text of the button to Get Started
+            authorizeOutlet.setTitle("Get Started", forState: .Normal)
         }
     }
     
@@ -44,16 +47,19 @@ class Onboard1ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        <#code#>
+    }
     
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     
 //     Get the new view controller using segue.destinationViewController.
 //     Pass the selected object to the new view controller.
-            authorizeHealthKit()
-        }
+//            authorizeHealthKit()
+//        }
     
     func authorizeHealthKit() {
         healthManager.authorizeHealthKit { (authorized,  error) -> Void in
