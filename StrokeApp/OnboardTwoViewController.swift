@@ -14,6 +14,7 @@ class Onboard2ViewController: UIViewController, UIPickerViewDataSource,UIPickerV
     var genders = ["Male", "Female", "Other"]
     var races = ["African American", "Alaska Native", "American Indian", "White", "Hispanic", "Asian American"]
     var kUnknownString: String = "Unknown"
+    var hkWeight: HKQuantitySample?
     
  //@IBOutlet var profileImage: UIImageView!
     @IBOutlet weak var profileImage: UIImageView!
@@ -61,6 +62,30 @@ class Onboard2ViewController: UIViewController, UIPickerViewDataSource,UIPickerV
         age.text = profile.age == nil ? kUnknownString : String(profile.age!)
         gender.text = genderLiteral(profile.biologicalSex?.biologicalSex)
         
+        let sampleType = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)
+
+        healthManager.readMostRecentSample(sampleType!, completion: { (mostRecentWeight, error) -> Void in
+            
+            if (error != nil) {
+                print("Error reading weight from HealthKit Store: \(error.localizedDescription)")
+                return;
+            }
+            
+            var weightLocalizedString = self.kUnknownString
+            self.hkWeight = mostRecentWeight as? HKQuantitySample;
+            
+            if let pounds = self.hkWeight?.quantity.doubleValueForUnit(HKUnit.poundUnit()) {
+                let weightFormatter = NSMassFormatter()
+                weightFormatter.forPersonMassUse = true;
+                weightLocalizedString = weightFormatter.stringFromValue(pounds, unit: .Pound)
+            }
+            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.weight.text = weightLocalizedString
+                
+            });
+            
+        })
         
         // Do any additional setup after loading the view.
     }
@@ -78,21 +103,13 @@ class Onboard2ViewController: UIViewController, UIPickerViewDataSource,UIPickerV
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        //        if pickerView.tag == 1 {
-        //            return genders.count
-        //        } else {
         return races.count
-        //        }
     }
     
     //MARK: Delegates
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-        //        if pickerView.tag == 1 {
-        //            return genders[row]
-        //        } else {
         return races[row]
-        //        }
         
     }
     

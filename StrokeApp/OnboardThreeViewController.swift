@@ -21,6 +21,32 @@ class OnboardThreeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        if (userDataManager.getQuestionAnswer(1) == 0) {
+            Question1.setOn(false, animated: true)
+        }
+
+        if (userDataManager.getQuestionAnswer(2) == 0) {
+            Question2.setOn(false, animated: true)
+        }
+
+        if (userDataManager.getQuestionAnswer(3) == 0) {
+            Question3.setOn(false, animated: true)
+        }
+
+        if (userDataManager.getQuestionAnswer(4) == 0) {
+            Question4.setOn(false, animated: true)
+        }
+
+        if (userDataManager.getQuestionAnswer(5) == 0) {
+            Question5.setOn(false, animated: true)
+        }
+
+        if (userDataManager.getQuestionAnswer(6) == 0) {
+            Question6.setOn(false, animated: true)
+        }
+
+        
     }
    
 
@@ -30,14 +56,18 @@ class OnboardThreeViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        userDataManager.setQuestionAnswer(1, answer: Question1.on ? 1 : 0)
+        userDataManager.setQuestionAnswer(2, answer: Question2.on ? 1 : 0)
+        userDataManager.setQuestionAnswer(3, answer: Question3.on ? 1 : 0)
+        userDataManager.setQuestionAnswer(4, answer: Question4.on ? 1 : 0)
+        userDataManager.setQuestionAnswer(5, answer: Question5.on ? 1 : 0)
+        userDataManager.setQuestionAnswer(6, answer: Question6.on ? 1 : 0)
     }
-    */
 
 }
