@@ -12,6 +12,8 @@ class Onboard1ViewController: UIViewController {
 
     var authorized = false
     
+    @IBOutlet weak var authorizeOutlet: UIButton!
+    
     @IBAction func doGetStarted(sender: AnyObject) {
         if (!authorized) {
             authorizeHealthKit()
