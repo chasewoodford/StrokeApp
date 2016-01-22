@@ -29,6 +29,16 @@ class HomeViewController: UIViewController {
         StrokeInfoButton.layer.cornerRadius = 5
         StrokeTestsButton.layer.cornerRadius = 5
         
+        if let riskFactor = userDataManager.getStrokeRisk() {
+            if (riskFactor == 1) {
+                CurrentRiskFactorImage.image = UIImage(named: "LowRisk")
+            } else if (riskFactor == 2) {
+                CurrentRiskFactorImage.image = UIImage(named: "ModerateRisk")
+            } else if (riskFactor == 3){
+                CurrentRiskFactorImage.image = UIImage(named: "HighRisk")
+            }
+        }
+        
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         imageView.contentMode = .ScaleAspectFit
         // 4

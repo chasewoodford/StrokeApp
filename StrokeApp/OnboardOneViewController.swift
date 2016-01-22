@@ -9,10 +9,15 @@
 import UIKit
 
 class Onboard1ViewController: UIViewController {
+
+    var authorized = false
     
     @IBAction func doGetStarted(sender: AnyObject) {
-        authorizeHealthKit()
-        userDataManager.setOnboarded(2)
+        if (!authorized) {
+            authorizeHealthKit()
+        } else {
+            userDataManager.setOnboarded(2)
+        }
     }
     
     //    override func viewWillDisappear(animated: Bool) {
@@ -24,6 +29,12 @@ class Onboard1ViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        if (!authorized) {
+            // set the text of the button to Authorize
+        } else {
+            // set the text of the button to Get Started
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,11 +46,12 @@ class Onboard1ViewController: UIViewController {
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    //        authorizeHealthKit()
-    //    }
+        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+//     Get the new view controller using segue.destinationViewController.
+//     Pass the selected object to the new view controller.
+            authorizeHealthKit()
+        }
     
     func authorizeHealthKit() {
         healthManager.authorizeHealthKit { (authorized,  error) -> Void in
