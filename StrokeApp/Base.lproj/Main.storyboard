@@ -193,7 +193,7 @@
                                 </state>
                                 <connections>
                                     <action selector="doGetStarted:" destination="d1e-jG-7EE" eventType="touchUpInside" id="YX4-gu-EoU"/>
-                                    <segue destination="oNY-Gm-xjh" kind="show" id="wSe-27-h7q"/>
+                                    <segue destination="oNY-Gm-xjh" kind="show" identifier="Start" id="wSe-27-h7q"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoLarge" translatesAutoresizingMaskIntoConstraints="NO" id="FSx-iC-qTD">
@@ -453,8 +453,8 @@ VGhlIHVsdGltYXRlIGFwcCADZm9yIHN0cm9rZSBhbGVydCBhbmQgc3Ryb2tlIHByZXZlbnRpb24
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="XUq-Hg-wlF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFo-Sh-nEW">
@@ -490,19 +490,8 @@ VGhlIHVsdGltYXRlIGFwcCADZm9yIHN0cm9rZSBhbGVydCBhbmQgc3Ryb2tlIHByZXZlbnRpb24
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v67-le-cRD">
-                                <rect key="frame" x="20" y="229" width="207" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="icG-ce-uhI"/>
-                                </constraints>
-                                <string key="text">Have you ever had a stroke?</string>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dEo-pT-5af">
-                                <rect key="frame" x="20" y="267" width="207" height="30"/>
+                                <rect key="frame" x="20" y="285" width="207" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="Xmz-oZ-DrT"/>
@@ -513,7 +502,7 @@ VGhlIHVsdGltYXRlIGFwcCADZm9yIHN0cm9rZSBhbGVydCBhbmQgc3Ryb2tlIHByZXZlbnRpb24
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sVW-47-BwQ">
-                                <rect key="frame" x="20" y="304" width="207" height="30"/>
+                                <rect key="frame" x="15" y="343" width="207" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="hKU-4q-3Zb"/>
@@ -524,7 +513,7 @@ VGhlIHVsdGltYXRlIGFwcCADZm9yIHN0cm9rZSBhbGVydCBhbmQgc3Ryb2tlIHByZXZlbnRpb24
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrn-JO-VMX">
-                                <rect key="frame" x="20" y="346" width="207" height="30"/>
+                                <rect key="frame" x="20" y="409" width="207" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="4VR-zT-Vpj"/>
@@ -539,10 +528,87 @@ VGhlIHVsdGltYXRlIGFwcCADZm9yIHN0cm9rZSBhbGVydCBhbmQgc3Ryb2tlIHByZXZlbnRpb24
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="dqn-TH-Tjn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sna-bL-o6k">
+                                <rect key="frame" x="290" y="154" width="51" height="31"/>
+                                <color key="onTintColor" red="0.1019607843" green="0.45882352939999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1e-1C-chr">
+                                <rect key="frame" x="254" y="159" width="28" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jTP-oN-SdL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEw-ST-507">
+                                <rect key="frame" x="347" y="159" width="22" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Bsp-0n-m43"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zEL-bF-40M">
+                                <rect key="frame" x="293" y="205" width="51" height="31"/>
+                                <color key="onTintColor" red="0.1019607843" green="0.45882352939999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-U6-YdN">
+                                <rect key="frame" x="257" y="210" width="28" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qHh-FS-4NV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFa-v6-jT1">
+                                <rect key="frame" x="350" y="210" width="22" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CyE-7D-kjn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6jD-cA-PQL">
+                                <rect key="frame" x="290" y="188" width="51" height="31"/>
+                                <color key="onTintColor" red="0.1019607843" green="0.45882352939999999" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SW3-Uh-dnx">
+                                <rect key="frame" x="254" y="193" width="28" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RRE-U9-Yx6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7x-Pt-3RS">
+                                <rect key="frame" x="347" y="193" width="22" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="MMM-ME-ccI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v67-le-cRD">
+                                <rect key="frame" x="20" y="229" width="207" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="icG-ce-uhI"/>
+                                </constraints>
+                                <string key="text">Have you ever had a stroke?</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
