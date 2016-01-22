@@ -34,6 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             initialViewController = storyboard.instantiateViewControllerWithIdentifier("onboard1")
         } else if onboarded == 2 {
             initialViewController = storyboard.instantiateViewControllerWithIdentifier("onboard2")
+        } else if onboarded == 3 {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("onboard3")
         } else {
             initialViewController = storyboard.instantiateViewControllerWithIdentifier("home")
         }
