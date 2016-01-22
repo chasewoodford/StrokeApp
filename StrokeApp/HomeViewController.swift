@@ -9,7 +9,6 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var CurrentRiskFactorLabel: UILabel!
     @IBOutlet weak var CurrentRiskFactorImage: UIImageView!
     @IBOutlet weak var UserTitleAndAge: UILabel!
     @IBOutlet weak var StrokeInfoButton: UIButton!
@@ -21,6 +20,8 @@ class HomeViewController: UIViewController {
     @IBAction func StrokeTestsButton(sender: AnyObject) {
     }
     
+    @IBAction func ResetButton(sender: AnyObject) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
