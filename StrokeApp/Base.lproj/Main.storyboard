@@ -64,6 +64,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hye-Y5-sb7">
+                                <rect key="frame" x="281" y="550" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ATR-20-K0q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -82,8 +89,10 @@
                             <constraint firstItem="ird-sa-kkj" firstAttribute="top" secondItem="Wdl-SD-8Oe" secondAttribute="bottom" constant="52" id="o3s-lg-wvM"/>
                             <constraint firstItem="ird-sa-kkj" firstAttribute="top" secondItem="Fu4-8q-bKG" secondAttribute="bottom" constant="42" id="p1b-kn-N4U"/>
                             <constraint firstItem="2Mg-OZ-hqw" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="q7L-a9-bxq"/>
+                            <constraint firstAttribute="bottom" secondItem="Hye-Y5-sb7" secondAttribute="bottom" constant="20" symbolic="YES" id="qCj-AQ-SO8"/>
                             <constraint firstItem="ird-sa-kkj" firstAttribute="leading" secondItem="cvv-W3-QBX" secondAttribute="leading" id="qX9-EB-0rz"/>
                             <constraint firstItem="Wdl-SD-8Oe" firstAttribute="top" secondItem="Fu4-8q-bKG" secondAttribute="bottom" constant="-56" id="rWm-ma-Vuc"/>
+                            <constraint firstItem="Hye-Y5-sb7" firstAttribute="centerX" secondItem="cvv-W3-QBX" secondAttribute="centerX" id="uCO-g0-n7f"/>
                             <constraint firstItem="Wdl-SD-8Oe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yXG-0O-Z2N"/>
                         </constraints>
                     </view>
