@@ -12,6 +12,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var CurrentRiskFactorLabel: UILabel!
     @IBOutlet weak var CurrentRiskFactorImage: UIImageView!
     @IBOutlet weak var UserTitleAndAge: UILabel!
+    @IBOutlet weak var StrokeInfoButton: UIButton!
+    @IBOutlet weak var StrokeTestsButton: UIButton!
     
     @IBAction func StrokeInfoButton(sender: AnyObject) {
     }
@@ -19,12 +21,10 @@ class HomeViewController: UIViewController {
     @IBAction func StrokeTestsButton(sender: AnyObject) {
     }
     
-    
-    @IBAction func SendToDoctorButton(sender: AnyObject) {
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        StrokeInfoButton.layer.cornerRadius = 5
+        StrokeTestsButton.layer.cornerRadius = 5
         // Do any additional setup after loading the view, typically from a nib.
     }
     
