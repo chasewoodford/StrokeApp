@@ -21,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="2Mg-OZ-hqw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HighRisk" translatesAutoresizingMaskIntoConstraints="NO" id="Fu4-8q-bKG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="HighRisk" translatesAutoresizingMaskIntoConstraints="NO" id="Fu4-8q-bKG">
                                 <rect key="frame" x="26" y="96" width="548" height="265"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ird-sa-kkj">
@@ -68,6 +68,10 @@
                                 <connections>
                                     <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ATR-20-K0q"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBj-kQ-sqa">
+                                <rect key="frame" x="20" y="28" width="24" height="22"/>
+                                <state key="normal" image="Menu"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
