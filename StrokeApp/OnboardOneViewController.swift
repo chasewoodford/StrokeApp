@@ -15,12 +15,19 @@ class Onboard1ViewController: UIViewController {
     @IBOutlet weak var authorizeOutlet: UIButton!
     
     @IBAction func doGetStarted(sender: AnyObject) {
-        if (!authorized) {
-            authorizeHealthKit()
-            authorizeOutlet.setTitle("Get Started", forState: .Normal)
-        } else {
+        
+//        if let authorized = userDataManager.getAuthorized() {
+//            if (authorized) {
+//                authorizeHealthKit()
+//                authorizeOutlet.setTitle("Get Started", forState: .Normal)
+//            }
+//        } else {
+        if (authorized) {
             userDataManager.setOnboarded(2)
+        } else {
+            authorizeHealthKit()
         }
+//        }
     }
     
     //    override func viewWillDisappear(animated: Bool) {
@@ -33,13 +40,14 @@ class Onboard1ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        if (!authorized) {
+//            userDataManager.setAuthorized(false)
+//        if (!authorized) {
             // set the text of the button to Authorize
             authorizeOutlet.setTitle("Authorize Smart Beat", forState: .Normal)
-        } else {
-            // set the text of the button to Get Started
-            authorizeOutlet.setTitle("Get Started", forState: .Normal)
-        }
+//        } else {
+//            // set the text of the button to Get Started
+//            authorizeOutlet.setTitle("Get Started", forState: .Normal)
+//        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,7 +56,12 @@ class Onboard1ViewController: UIViewController {
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
-        <#code#>
+        if identifier == "Start" && !authorized {
+            authorizeOutlet.setTitle("Get Started", forState: .Normal)
+            authorized = true
+            return false
+        }
+        return true
     }
     
     // MARK: - Navigation
@@ -65,6 +78,8 @@ class Onboard1ViewController: UIViewController {
         healthManager.authorizeHealthKit { (authorized,  error) -> Void in
             if authorized {
                 print("HealthKit authorization received.")
+//                userDataManager.setAuthorized(true)
+//                self.authorized = true;
             }
             else
             {
