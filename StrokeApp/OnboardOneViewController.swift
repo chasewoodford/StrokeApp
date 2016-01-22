@@ -16,38 +16,19 @@ class Onboard1ViewController: UIViewController {
     
     @IBAction func doGetStarted(sender: AnyObject) {
         
-//        if let authorized = userDataManager.getAuthorized() {
-//            if (authorized) {
-//                authorizeHealthKit()
-//                authorizeOutlet.setTitle("Get Started", forState: .Normal)
-//            }
-//        } else {
         if (authorized) {
             userDataManager.setOnboarded(2)
         } else {
             authorizeHealthKit()
         }
-//        }
     }
-    
-    //    override func viewWillDisappear(animated: Bool) {
-    //        print("call authorize health kit")
-    //        authorizeHealthKit()
-    //    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
-//            userDataManager.setAuthorized(false)
-//        if (!authorized) {
-            // set the text of the button to Authorize
-            authorizeOutlet.setTitle("Authorize Smart Beat", forState: .Normal)
-//        } else {
-//            // set the text of the button to Get Started
-//            authorizeOutlet.setTitle("Get Started", forState: .Normal)
-//        }
+        authorizeOutlet.setTitle("Authorize Smart Beat", forState: .Normal)
     }
     
     override func didReceiveMemoryWarning() {
@@ -57,7 +38,7 @@ class Onboard1ViewController: UIViewController {
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
         if identifier == "Start" && !authorized {
-            authorizeOutlet.setTitle("Get Started", forState: .Normal)
+            authorizeOutlet.setTitle("Authorization Recieved. Get Started", forState: .Normal)
             authorized = true
             return false
         }
@@ -78,8 +59,6 @@ class Onboard1ViewController: UIViewController {
         healthManager.authorizeHealthKit { (authorized,  error) -> Void in
             if authorized {
                 print("HealthKit authorization received.")
-//                userDataManager.setAuthorized(true)
-//                self.authorized = true;
             }
             else
             {
