@@ -36,7 +36,7 @@ class Onboard2ViewController: UIViewController, UIPickerViewDataSource,UIPickerV
         
         userDataManager.setRace(racePicker.selectedRowInComponent(0))
         
-        userDataManager.setOnboarded(-1)
+        userDataManager.setOnboarded(3)
     }
     
     override func viewDidLoad() {
