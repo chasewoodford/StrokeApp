@@ -24,29 +24,37 @@ class OnboardThreeViewController: UIViewController {
         ShowMyStrokeRiskButton.layer.cornerRadius = 5
 
         // Do any additional setup after loading the view.
+
+        Question1.setOn(false, animated: true)
+        Question2.setOn(false, animated: true)
+        Question3.setOn(false, animated: true)
+        Question4.setOn(false, animated: true)
+        Question5.setOn(false, animated: true)
+        Question6.setOn(false, animated: true)
         
-        if (userDataManager.getQuestionAnswer(1) == 0) {
-            Question1.setOn(false, animated: true)
+        
+        if (userDataManager.getQuestionAnswer(1) == 1) {
+            Question1.setOn(true, animated: true)
         }
 
-        if (userDataManager.getQuestionAnswer(2) == 0) {
-            Question2.setOn(false, animated: true)
+        if (userDataManager.getQuestionAnswer(2) == 1) {
+            Question2.setOn(true, animated: true)
         }
 
-        if (userDataManager.getQuestionAnswer(3) == 0) {
-            Question3.setOn(false, animated: true)
+        if (userDataManager.getQuestionAnswer(3) == 1) {
+            Question3.setOn(true, animated: true)
         }
 
-        if (userDataManager.getQuestionAnswer(4) == 0) {
-            Question4.setOn(false, animated: true)
+        if (userDataManager.getQuestionAnswer(4) == 1) {
+            Question4.setOn(true, animated: true)
         }
 
-        if (userDataManager.getQuestionAnswer(5) == 0) {
-            Question5.setOn(false, animated: true)
+        if (userDataManager.getQuestionAnswer(5) == 1) {
+            Question5.setOn(true, animated: true)
         }
 
-        if (userDataManager.getQuestionAnswer(6) == 0) {
-            Question6.setOn(false, animated: true)
+        if (userDataManager.getQuestionAnswer(6) == 1) {
+            Question6.setOn(true, animated: true)
         }
 
         

@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    var blankString = ""
+    
     @IBOutlet weak var CurrentRiskFactorImage: UIImageView!
     @IBOutlet weak var UserTitleAndAge: UILabel!
     @IBOutlet weak var StrokeInfoButton: UIButton!
@@ -28,6 +30,13 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         StrokeInfoButton.layer.cornerRadius = 5
         StrokeTestsButton.layer.cornerRadius = 5
+
+        let profile = healthManager.readProfile()
+        let age = profile.age == nil ? blankString : String(profile.age!)
+        
+        if let firstName = userDataManager.getFirstName() {
+            UserTitleAndAge.text = "\(firstName), \(age)"
+        }
         
         if let riskFactor = userDataManager.getStrokeRisk() {
             if (riskFactor == 1) {

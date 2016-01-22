@@ -16,18 +16,13 @@ class Onboard1ViewController: UIViewController {
     @IBOutlet weak var GetStartedButton: UIButton!
     
     @IBAction func doGetStarted(sender: AnyObject) {
-        if (!authorized) {
-            authorizeHealthKit()
-            authorizeOutlet.setTitle("Get Started", forState: .Normal)
-        } else {
+        
+        if (authorized) {
             userDataManager.setOnboarded(2)
+        } else {
+            authorizeHealthKit()
         }
     }
-    
-    //    override func viewWillDisappear(animated: Bool) {
-    //        print("call authorize health kit")
-    //        authorizeHealthKit()
-    //    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,18 +31,21 @@ class Onboard1ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-        if (!authorized) {
-            // set the text of the button to Authorize
-            authorizeOutlet.setTitle("Authorize Smart Beat", forState: .Normal)
-        } else {
-            // set the text of the button to Get Started
-            authorizeOutlet.setTitle("Get Started", forState: .Normal)
-        }
+        authorizeOutlet.setTitle("Authorize Smart Beat", forState: .Normal)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if identifier == "Start" && !authorized {
+            authorizeOutlet.setTitle("Authorization Recieved. Get Started", forState: .Normal)
+            authorized = true
+            return false
+        }
+        return true
     }
     
     // MARK: - Navigation

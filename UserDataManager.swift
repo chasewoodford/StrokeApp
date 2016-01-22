@@ -10,6 +10,14 @@ import Foundation
 
 class UserDataManager {
     
+    func getAuthorized() -> Bool? {
+        return NSUserDefaults.standardUserDefaults().objectForKey("authorized") as? Bool
+    }
+    
+    func setAuthorized(authorized: Bool) {
+        NSUserDefaults.standardUserDefaults().setObject(authorized, forKey: "authorized")
+    }
+    
     func getFirstName() -> String? {
         return NSUserDefaults.standardUserDefaults().objectForKey("firstName") as? String
     }
